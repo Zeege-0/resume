@@ -1,51 +1,60 @@
-% !TEX program = xelatex
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
 
 \documentclass{resume}
-%\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
-%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+% \usepackage{NotoSansSC_external}
+% \usepackage{NotoSerifCJKsc_external}
+% \usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
 
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{Bin Yuan}
+\name{Ze-Jia LIN林泽佳}
 
 \basicInfo{
-  \email{yuanbin2014@gmail.com} \textperiodcentered\ 
-  \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
-  \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
+  \email{linzj39@mail2.sysu.edu.cn} \textperiodcentered\ 
+  \github[zeege-0.github.io]{https://zeege-0.github.io}
 
-\section{\faGraduationCap\ Education}
-\datedsubsection{\textbf{Shanghai Jiao Tong University (SJTU)}, Shanghai, China}{2013 -- Present}
-\textit{Master student} in Electronics Engineering (EE), expected March 2016
-\datedsubsection{\textbf{Xidian University}, Shaanxi, China}{2009 -- 2013}
-\textit{B.S.} in Electronics Engineering (EE)
+  % \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
+  % \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}
+}
+ 
+\section{\faGraduationCap\  Education}
+\datedsubsection{\textbf{Sun Yat-sen University}, Guangzhou, China}{2022 -- 2025 (expected)}
+\textit{M.S.}\ in Computer Science \qquad Mentor: Assoc. Prof. Xianwei Zhang
+\datedsubsection{\textbf{Northwestern Polytechnical University}, Xi'an, China}{2018 -- 2022}
+\textit{B.S.}\ in Software Engineering
 
 \section{\faUsers\ Experience}
-\datedsubsection{\textbf{FLAG Inc.} California, America}{2012 -- Present}
-\role{Summer Intern}{Manager: xxx}
-Brief introduction: xxx.
-\begin{itemize}
-  \item Implemented xxx feature
-  \item Optimized xxx 5\%
-  \item xxx
-\end{itemize}
 
-\datedsubsection{\textbf{xxx Projects}}{Jan. 2015 -- Present}
-\role{C, Python, Django, Linux}{Individual Projects, collaborated with xxx}
-Brief introduction: xxx
-\begin{itemize}
-  \item Implemented xxx feature
-  \item Optimized xxx 5\%
-  \item xxx
-\end{itemize}
+\datedsubsection{\textbf{基于编译器的核函数多流调度, 中山大学}}{2022 -- 至今}
+ICCD'23在投论文，使用编译器分析核函数数据依赖，自动进行多流调度。\\与GrCUDA和Taskflow相比取得平均1.31x和1.16x加速比，只需额外引入2.3\%行代码。
 
-\datedsubsection{\textbf{\LaTeX\ résumé template}}{May. 2015 -- Present}
-\role{\LaTeX, Maintainer}{Individual Projects}
-An elegant \LaTeX\ résumé template, https://github.com/billryan/resume
+\vspace*{0.3em}
+\datedsubsection{\textbf{编译原理课程助教, 中山大学}}{2023.03 -- 2023.07}
+实现基于LLVM的C语言子集的编译器，负责抽象语法树$\to$ IR生成部分。
+
+\vspace*{0.3em}
+\datedsubsection{\textbf{GPU加速的视频盲水印, 中山大学}}{2022.12}
+课程设计，使用CUDA实现混合精度和多流并行的盲水印嵌入/提取算法。\\在A100上对2K视频嵌入/提取速度达到8.1/17.9FPS。
+
+\vspace*{0.3em}
+\datedsubsection{\textbf{微信支付后台开发实习, 腾讯(深圳)}}{2021.07 -- 2021.09}
+使用Django搭建分布式的企业微信机器人，自动回复后台测试环境相关问题。
+
+\vspace*{0.3em}
+\datedsubsection{\textbf{复合材料构件的智能无损检测, 西北工业大学}}{2020年6月 -- 2022年5月}
+项目负责人，入选省级大创项目，设计缺陷图像分割模型。\\使用仅1.4M参数取得60.82\%的Dice系数，在MI100上对1080p图像分割推理速度达到237FPS。
+
+
+\section{\faBook\ Publication}
+
 \begin{itemize}
-  \item Easy to be further customized or extended
-  \item Full support for unicode characters (e.g. CJK) with \XeLaTeX\
-  \item FontAwesome 4.5.0 support
+  \item $[\rm{CF'22}]$ \href{https://dl.acm.org/doi/10.1145/3528416.3530231}{moTuner: A Compiler-based Auto-tuning Approach for Mixed-precision Operators} \\ Zewei Mo, \underline{\textbf{Zejia Lin}}, Xianwei Zhang, and Yutong Lu
 \end{itemize}
 
 % Reference Test
@@ -55,23 +64,25 @@ An elegant \LaTeX\ résumé template, https://github.com/billryan/resume
 %  \item main contribution
 %\end{itemize}
 
-\section{\faCogs\ Skills}
-\begin{itemize}[parsep=0.5ex]
-  \item Programming Languages: C == Python > C++ > Java
-  \item Platform: Linux
-  \item Development: Web, xxx
-\end{itemize}
+% \section{\faCogs\ 技能}
+% \begin{itemize}[parsep=0.5ex]
+%   \item 编程语言: C/C++, CUDA, Python, Java
+%   \item 英语六级：610/750
+% \end{itemize}
 
 \section{\faHeartO\ Honors and Awards}
-\datedline{\textit{\nth{1} Prize}, Award on xxx }{Jun. 2013}
-\datedline{Other awards}{2015}
+\datedline{\textit{中山大学}\ 一等奖学金 (夏令营排名第5)}{2022学年}
+\datedline{\textit{西北工业大学}\ 优秀本科毕业设计}{2022年}
+\datedline{\textit{西北工业大学}\ 校级一等奖学金}{2018, 2019, 2021学年}
+\datedline{\textit{中国高校计算机大赛微信小程序应用开发赛}\ 全国二等奖 (5\%, 参赛队长)}{2020年8月}
 
-\section{\faInfo\ Miscellaneous}
-\begin{itemize}[parsep=0.5ex]
-  \item Blog: http://your.blog.me
-  \item GitHub: https://github.com/username
-  \item Languages: English - Fluent, Mandarin - Native speaker
-\end{itemize}
+% \section{\faInfo\ 其他}
+% % increase linespacing [parsep=0.5ex]
+% \begin{itemize}[parsep=0.5ex]
+%   \item 技术博客: http://blog.yours.me
+%   \item GitHub: https://github.com/username
+%   \item 语言: 英语 - 熟练(TOEFL xxx)
+% \end{itemize}
 
 %% Reference
 %\newpage

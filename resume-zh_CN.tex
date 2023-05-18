@@ -13,50 +13,51 @@
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{你的大名}
+\name{林泽佳}
 
 \basicInfo{
-  \email{yuanbin2014@gmail.com} \textperiodcentered\ 
-  \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
-  \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
+  \email{linzj39@mail2.sysu.edu.cn} \textperiodcentered\ 
+  \github[zeege-0.github.io]{https://zeege-0.github.io}
+
+  % \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
+  % \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}
+}
  
 \section{\faGraduationCap\  教育背景}
-\datedsubsection{\textbf{上海交通大学}, 上海}{2013 -- 至今}
-\textit{在读硕士研究生}\ 信息与通信工程, 预计 2016 年 3 月毕业
-\datedsubsection{\textbf{西安电子科技大学}, 西安, 陕西}{2009 -- 2013}
-\textit{学士}\ 通信工程
+\datedsubsection{\textbf{中山大学}, 广州}{2022 -- 至今}
+\textit{学硕}\ 计算机科学与技术 \qquad 导师：张献伟
+\datedsubsection{\textbf{西北工业大学}, 西安}{2018 -- 2022}
+\textit{本科}\ 软件工程 \qquad\qquad\qquad 排名：22 / 248 \qquad\quad 英语六级：610 / 750
+\datedsubsection{\textbf{广州市执信中学}, 广州}{2015 -- 2018}
+\textit{高中}\ 
 
-\section{\faUsers\ 实习/项目经历}
-\datedsubsection{\textbf{黑科技公司} 上海}{2015年3月 -- 2015年5月}
-\role{实习}{经理: 高富帅}
-xxx后端开发
-\begin{itemize}
-  \item 实现了 xxx 特性
-  \item 后台资源占用率减少8\%
-  \item xxx
-\end{itemize}
+\section{\faUsers\ 项目经历}
 
-\datedsubsection{\textbf{分布式科学上网姿势}}{2014年6月 -- 至今}
-\role{Golang, Linux}{个人项目，和富帅糕合作开发}
-\begin{onehalfspacing}
-分布式负载均衡科学上网姿势, https://github.com/cyfdecyf/cow
-\begin{itemize}
-  \item 修复了连接未正常关闭导致文件描述符耗尽的 bug
-  \item 使用Chord 哈希 URL, 实现稳定可靠地分流
-  \item xxx (尽量使用量化的客观结果)
-\end{itemize}
-\end{onehalfspacing}
+\datedsubsection{\textbf{基于编译器的核函数多流调度, 中山大学}}{2022 -- 至今}
+ICCD'23在投论文，使用编译器分析核函数数据依赖，自动进行多流调度。\\与GrCUDA和Taskflow相比取得平均1.31x和1.16x加速比，只需额外引入2.3\%行代码。
 
-\datedsubsection{\textbf{\LaTeX\ 简历模板}}{2015 年5月 -- 至今}
-\role{\LaTeX, Python}{个人项目}
-\begin{onehalfspacing}
-优雅的 \LaTeX\ 简历模板, https://github.com/billryan/resume
+\vspace*{0.3em}
+\datedsubsection{\textbf{编译原理课程助教, 中山大学}}{2023.03 -- 2023.07}
+实现基于LLVM的C语言子集的编译器，负责抽象语法树$\to$ IR生成部分。
+
+\vspace*{0.3em}
+\datedsubsection{\textbf{GPU加速的视频盲水印, 中山大学}}{2022.12}
+课程设计，使用CUDA实现混合精度和多流并行的盲水印嵌入/提取算法。\\在A100上对2K视频嵌入/提取速度达到8.1/17.9FPS。
+
+\vspace*{0.3em}
+\datedsubsection{\textbf{微信支付后台开发实习, 腾讯(深圳)}}{2021.07 -- 2021.09}
+使用Django搭建分布式的企业微信机器人，自动回复后台测试环境相关问题。
+
+\vspace*{0.3em}
+\datedsubsection{\textbf{复合材料构件的智能无损检测, 西北工业大学}}{2020.06 -- 2022.05}
+项目负责人，入选省级大创项目，设计缺陷图像分割模型。\\使用仅1.4M参数取得60.82\%的Dice系数，在MI100上对1080p图像分割推理速度达到237FPS。
+
+
+\section{\faBook\ 发表论文}
+
 \begin{itemize}
-  \item 容易定制和扩展
-  \item 完善的 Unicode 字体支持，使用 \XeLaTeX\ 编译
-  \item 支持 FontAwesome 4.5.0
+  \item $[\rm{CF'22}]$ \href{https://dl.acm.org/doi/10.1145/3528416.3530231}{moTuner: A Compiler-based Auto-tuning Approach for Mixed-precision Operators} \\ Zewei Mo, \underline{\textbf{Zejia Lin}}, Xianwei Zhang, and Yutong Lu
 \end{itemize}
-\end{onehalfspacing}
 
 % Reference Test
 %\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
@@ -65,25 +66,28 @@ xxx后端开发
 %  \item main contribution
 %\end{itemize}
 
-\section{\faCogs\ IT 技能}
-% increase linespacing [parsep=0.5ex]
-\begin{itemize}[parsep=0.5ex]
-  \item 编程语言: C == Python > C++ > Java
-  \item 平台: Linux
-  \item 开发: xxx
-\end{itemize}
+% \section{\faCogs\ 技能}
+% \begin{itemize}[parsep=0.5ex]
+%   \item 编程语言: C/C++, CUDA, Python, Java
+%   \item 英语六级：610/750
+% \end{itemize}
 
 \section{\faHeartO\ 获奖情况}
-\datedline{\textit{第一名}, xxx 比赛}{2013 年6 月}
-\datedline{其他奖项}{2015}
 
-\section{\faInfo\ 其他}
-% increase linespacing [parsep=0.5ex]
-\begin{itemize}[parsep=0.5ex]
-  \item 技术博客: http://blog.yours.me
-  \item GitHub: https://github.com/username
-  \item 语言: 英语 - 熟练(TOEFL xxx)
-\end{itemize}
+\begin{onehalfspacing}
+\datedline{\textit{中山大学}\ 一等奖学金 (夏令营排名第5)}{2022学年}
+\datedline{\textit{西北工业大学}\ 优秀本科毕业设计}{2022年}
+\datedline{\textit{西北工业大学}\ 校级一等奖学金}{2018, 2019, 2021学年}
+\datedline{\textit{中国高校计算机大赛微信小程序应用开发赛}\ 全国二等奖 (5\%, 参赛队长)}{2020年8月}
+\end{onehalfspacing}
+
+% \section{\faInfo\ 其他}
+% % increase linespacing [parsep=0.5ex]
+% \begin{itemize}[parsep=0.5ex]
+%   \item 技术博客: http://blog.yours.me
+%   \item GitHub: https://github.com/username
+%   \item 语言: 英语 - 熟练(TOEFL xxx)
+% \end{itemize}
 
 %% Reference
 %\newpage
