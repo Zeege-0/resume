@@ -32,10 +32,10 @@
 
 \RequirePackage[
 	a4paper,
-	left=0.8in,
-	right=0.8in,
-	top=0.70in,
-	bottom=0.55in,
+	left=0.7in,
+	right=0.7in,
+	top=0.7in,
+	bottom=0.7in,
 	nohead
 ]{geometry}
 
@@ -65,10 +65,10 @@
   \section[#1]{#1 \hfill #2}%
 }
 \newcommand{\datedsubsection}[2]{%
-  \subsection[#1]{#1 \hfill #2}%
+  \subsection[#1]{#1 \hfill \textit{#2}}%
 }
 \newcommand{\datedline}[2]{%
-  {\par #1 \hfill #2 \par}%
+  {\par #1 \hfill \textit{#2} \par}%
 }
 
 \newcommand{\name}[1]{
@@ -84,10 +84,11 @@
 
 % defines one's email
 % usage: \email{<email>}
-\newcommand{\email}[1]{\faEnvelope\ \href{mailto:#1}{#1}}
+\newcommand{\email}[1]{\faEnvelopeO\ \href{mailto:#1}{#1}}
 % defines one's phone
 % usage: \phone{<phone>}
 \newcommand{\phone}[1]{\faPhone\ {#1}}
+\newcommand{\location}[1]{\faMapMarker\ {#1}}
 % defines one's linkedin
 % usage: \linkedin{<linkedin>}
 \newcommand{\linkedin}[2][]{\faLinkedin\ 
@@ -120,3 +121,4 @@
   {\par \textit{#1} ~ #2 \par}
   \vspace{0.85ex}
 }
+

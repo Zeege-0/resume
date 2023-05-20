@@ -13,81 +13,109 @@
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
+\titlespacing*{\section}{0pt}{1\baselineskip}{.5\baselineskip}
+
 \name{林泽佳}
 
 \basicInfo{
   \email{linzj39@mail2.sysu.edu.cn} \textperiodcentered\ 
-  \github[zeege-0.github.io]{https://zeege-0.github.io}
-
-  % \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
-  % \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}
+  % \github[zeege-0.github.io]{https://zeege-0.github.io} \textperiodcentered\ 
+  \phone{180 2230 2700} \textperiodcentered\ 
+  \location{中山大学\ 国家超级计算广州中心\ 302}
 }
- 
-\section{\faGraduationCap\  教育背景}
-\datedsubsection{\textbf{中山大学}, 广州}{2022 -- 至今}
-\textit{学硕}\ 计算机科学与技术 \qquad 导师：张献伟
-\datedsubsection{\textbf{西北工业大学}, 西安}{2018 -- 2022}
-\textit{本科}\ 软件工程 \qquad\qquad\qquad 排名：22 / 248 \qquad\quad 英语六级：610 / 750
-\datedsubsection{\textbf{广州市执信中学}, 广州}{2015 -- 2018}
-\textit{高中}\ 
 
-\section{\faUsers\ 项目经历}
-
-\datedsubsection{\textbf{基于编译器的核函数多流调度, 中山大学}}{2022 -- 至今}
-ICCD'23在投论文，使用编译器分析核函数数据依赖，自动进行多流调度。\\与GrCUDA和Taskflow相比取得平均1.31x和1.16x加速比，只需额外引入2.3\%行代码。
-
-\vspace*{0.3em}
-\datedsubsection{\textbf{编译原理课程助教, 中山大学}}{2023.03 -- 2023.07}
-实现基于LLVM的C语言子集的编译器，负责抽象语法树$\to$ IR生成部分。
-
-\vspace*{0.3em}
-\datedsubsection{\textbf{GPU加速的视频盲水印, 中山大学}}{2022.12}
-课程设计，使用CUDA实现混合精度和多流并行的盲水印嵌入/提取算法。\\在A100上对2K视频嵌入/提取速度达到8.1/17.9FPS。
-
-\vspace*{0.3em}
-\datedsubsection{\textbf{微信支付后台开发实习, 腾讯(深圳)}}{2021.07 -- 2021.09}
-使用Django搭建分布式的企业微信机器人，自动回复后台测试环境相关问题。
-
-\vspace*{0.3em}
-\datedsubsection{\textbf{复合材料构件的智能无损检测, 西北工业大学}}{2020.06 -- 2022.05}
-项目负责人，入选省级大创项目，设计缺陷图像分割模型。\\使用仅1.4M参数取得60.82\%的Dice系数，在MI100上对1080p图像分割推理速度达到237FPS。
-
-
-\section{\faBook\ 发表论文}
-
-\begin{itemize}
-  \item $[\rm{CF'22}]$ \href{https://dl.acm.org/doi/10.1145/3528416.3530231}{moTuner: A Compiler-based Auto-tuning Approach for Mixed-precision Operators} \\ Zewei Mo, \underline{\textbf{Zejia Lin}}, Xianwei Zhang, and Yutong Lu
-\end{itemize}
-
-% Reference Test
-%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
-%An xxx optimized for xxx\cite{verma2015large}
-%\begin{itemize}
-%  \item main contribution
-%\end{itemize}
-
-% \section{\faCogs\ 技能}
-% \begin{itemize}[parsep=0.5ex]
-%   \item 编程语言: C/C++, CUDA, Python, Java
-%   \item 英语六级：610/750
-% \end{itemize}
-
-\section{\faHeartO\ 获奖情况}
+\section{\faHeartO\ 研究兴趣}
 
 \begin{onehalfspacing}
-\datedline{\textit{中山大学}\ 一等奖学金 (夏令营排名第5)}{2022学年}
-\datedline{\textit{西北工业大学}\ 优秀本科毕业设计}{2022年}
-\datedline{\textit{西北工业大学}\ 校级一等奖学金}{2018, 2019, 2021学年}
-\datedline{\textit{中国高校计算机大赛微信小程序应用开发赛}\ 全国二等奖 (5\%, 参赛队长)}{2020年8月}
+\textbf{关键词}：\textbf{编译优化}，\textbf{混合精度}，\textbf{异构计算}
+
+我关注异构计算系统的软硬件特性，利用编译流程从中寻找优化机会，包括混合精度与数值稳定性、计算资源调度、多任务并行等。
+
+我相信编译器需要同时结合高层的编程抽象和底层的硬件体系结构才能充分挖掘系统性能。
+
+我希望未来可以借助编译优化的方法面向GPU等大规模并行和异构计算进行深入研究。
+
+\end{onehalfspacing}
+ 
+\section{\faGraduationCap\  教育背景}
+\datedsubsection{\textbf{中山大学\quad 计算机科学与技术\quad 学术型硕士在读}}{2022.09 -- 至今, 广州}
+推荐免试研究生，计算系统优化方向
+
+导师：张献伟
+
+课程成绩：高等数值计算方法(96)，高级计算机体系结构(92)，高级网络与信息安全技术(97)
+
+\datedsubsection{\textbf{西北工业大学\quad 软件工程\quad 学士学位}}{2018.09 -- 2022.06, 西安}
+优秀毕业生，排名：22 / 248
+
+毕业论文(优秀本科毕设)：“基于计算机视觉的复合材料智能无损检测方法的研究”
+
+课程成绩：编译原理(97)，数值计算方法(92)，GPU并行程序设计(85)，软件系统开发综合训练(92)
+
+\datedsubsection{\textbf{广州市执信中学\quad 高中}}{2015.09 -- 2018.06, 广州}
+
+\vspace*{1em}
+
+\section{\faBook\ 论文工作}
+
+\begin{itemize}[parsep=0.5ex]
+  \item $\rm{[CF'22]}$ \href{https://dl.acm.org/doi/10.1145/3528416.3530231}{moTuner: A Compiler-based Auto-tuning Approach for Mixed-precision Operators} \\ Zewei Mo, \underline{\textbf{Zejia Lin}}, Xianwei Zhang, and Yutong Lu
+  \item \textit{在投} $[\rm{ICCD'23}]$ KeSCo: DAG-based Kernel Scheduling in Compiler for Multi-task Applications \\ \underline{\textbf{Zejia Lin}}, Zewei Mo, and Xianwei Zhang
+\end{itemize}
+
+\section{\faSearch\ 研究经历}
+
+\datedsubsection{\textbf{基于数据流图的核函数多流调度\quad 中山大学}}{2022.04 -- 至今}
+ICCD'23在投论文，在编译期分析核函数数据依赖，对串行执行的核函数进行多流调度，生成并行核函数执行的可执行文件，而用户只需要对CUDA源代码进行少量的修改。实验结果表明，该方法与动态调度器GrCUDA相比取得平均1.31x加速比，与编程框架Taskflow相比取得1.16x加速比。
+
+
+\vspace*{0.3em}
+\datedsubsection{\textbf{基于编译器的混合精度算子自动调优工具\quad 西北工业大学}}{2021.11 -- 2022.02}
+CF'22已发表论文，在编译期分析算子依赖和插入代码以收集算子运行时信息，结合静态和运行时信息创建搜索策略，对算子的混合精度参数进行调优。实验结果表明，该方法在较短的调优时间内对真实应用取得平均1.15x加速比。
+
+
+\vspace*{0.3em}
+\datedsubsection{\textbf{复合材料构件的智能无损检测\quad 西北工业大学}}{2020.06 -- 2022.05}
+项目负责人，入选省级大学生创新创业计划（张涛老师指导），算法成果应用在某研究所缺陷检测软件中。设计和实现使用混合监督的材料缺陷图像分割模型，使用仅1.4M参数取得60.82\%的Dice系数和97.15\%的准确率，在MI100上对1080p图像分割的推理速度达到237FPS。
+
+\section{\faRocket\ 获奖情况}
+
+\begin{onehalfspacing}
+\datedline{\textit{中山大学}\ 校一等奖学金 (夏令营排名第5)}{2022学年}
+\datedline{\textit{西北工业大学}\ 优秀毕业生}{2022.06}
+\datedline{\textit{西北工业大学}\ 优秀毕业设计}{2022.06}
+\datedline{\textit{西北工业大学}\ 校一等奖学金}{2018, 2019, 2021学年}
+\datedline{\textit{中国高校计算机大赛微信小程序应用开发赛}\ 全国二等奖 (5\%, 参赛队长)}{2020.08}
+\datedline{\textit{中国研究生数学建模竞赛}\ 全国二等奖}{2022.12}
 \end{onehalfspacing}
 
-% \section{\faInfo\ 其他}
-% % increase linespacing [parsep=0.5ex]
-% \begin{itemize}[parsep=0.5ex]
-%   \item 技术博客: http://blog.yours.me
-%   \item GitHub: https://github.com/username
-%   \item 语言: 英语 - 熟练(TOEFL xxx)
-% \end{itemize}
+\section{\faUsers\ 其它经历}
+
+\vspace*{0.3em}
+\datedsubsection{\textbf{DCS290/292编译原理与实验\quad 助教\quad 中山大学}}{2023.03 -- 2023.07}
+本科生课程助教，准备了LLVM IR、编程框架和相关工具的资料，并在课堂上现场教学。实现基于LLVM的C语言子集的编译器，负责抽象语法树$\to$ IR生成部分。
+
+\vspace*{0.3em}
+\datedsubsection{\textbf{微信支付\quad 后台开发实习\quad 腾讯(深圳)}}{2021.07 -- 2021.09}
+研发效能组，使用Django搭建分布式的企业微信机器人，设计和训练轻量的NLP模型，接入腾讯内部TAPD和七彩虹项目管理系统，为开发人员自动回复与后台测试环境相关问题。
+
+
+
+\section{\faCogs\ 专业技能}
+\begin{itemize}[parsep=0.5ex]
+  \item CCF CSP认证：Top 5.2\%
+  \item 英语六级：610 / 750
+  \item 编程语言: C/C++, CUDA, HIP, Python, Java
+  \item 编译工具链：Clang, LLVM, GDB, NVCC, CMake
+  \item 其它工具：NVIDIA nsys / ncu, Pytorch
+\end{itemize}
+\section{\faInfo\ 其他}
+\begin{itemize}[parsep=0.5ex]
+  \item \href{https://github.com/Zeege-0/Info-Security-Homework/}{算法实现：在GPU上使用混合精度和多流并行进行加速的视频盲水印嵌入/提取算法}
+  \item 算法实现：使用rocBLAS构建Cholesky分解求解器，性能高于rocSOLVER的potrf算子
+  \item \href{https://gitee.com/zeege/my-parser-generator}{工具实现：从上下文无关文法生成LR(1)语法分析器的工具}
+  \item \href{https://github.com/Zeege-0/numerical-analysis-homework}{算法研究：六阶非线性方程求解器的计算收敛阶和数值稳定性研究}
+\end{itemize}
 
 %% Reference
 %\newpage

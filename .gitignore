@@ -1,6 +1,8 @@
 # Copy this file to the Git repository and rename it ".gitignore".
 # Lines starting with '#' are treated as comments.
 
+.vscode
+
 ############################################
 ## USER SCRIPTS AND NOTES
 ############################################
